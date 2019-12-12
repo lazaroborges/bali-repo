@@ -1,0 +1,14 @@
+{% extends "layout.html" %} {% block title %} Log In {% endblock %} {% block main %}
+<div class="form-group">
+    <form action="/search" name="search" method="post" onsubmit="return validateForm()">
+        <div class="form-group">
+            <input autocomplete="on" autofocus class="form-control" name="urlLinkedin" placeholder="LinkedIn URL" type="url">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Search</button>
+
+    </form>
+</div>
+<script>
+</script>
+{% endblock %}

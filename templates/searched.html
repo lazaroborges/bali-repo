@@ -1,0 +1,28 @@
+{% extends "layout.html" %} {% block title %} Log In {% endblock %} {% block main %}
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">LinkedIn Profile URL</th>
+                <th scope="col">Source</th>
+                <th scope="col">Personal Email</th>
+                <th scope="col">Professional Email</th>
+                <th scope="col">Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>TBD</td>
+                <td>{{url}}</td>
+                <td>{{data.source}}</td>
+                <td>{% for x in range(0, lps) %} {{data.personal[x]}}, {%endfor%} </td>
+                <td>{% for x in range(0, lpf) %} {{data.professional[x]}}, {%endfor%}</td>
+                <td> empty for now</td>
+            </tr>
+
+
+</div>
+
+{% endblock %}
